@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class example {
-    //0.5h delete, 0.5h new, 18 months
+    //8h delete, 0.5h new, 24 months
     static int totalTimes=365*2*24;
     static int timesPerDel=16;
 
@@ -22,7 +22,7 @@ public class example {
                 newList.add(list.get(list.size()-1));
                 list=newList;
                 for (int j = 0; j < list.size(); j++) {
-                    System.out.print((i-list.get(j))+" ");
+                    System.out.print((i-list.get(j))/2.0+" ");
                 }
                 System.out.println("\n"+list.size()+"\n");
             }

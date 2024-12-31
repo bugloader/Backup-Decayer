@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 public class generator {
     public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i < 1000; i++) {
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             try (PrintWriter writer = new PrintWriter(i+".zip")) {
                 writer.println(i);
                 writer.println("This is another line.");
